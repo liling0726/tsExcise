@@ -9,7 +9,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/basic/basic.js",
+      "program": "${workspaceFolder}/interface/readonly.js",
       "outFiles": [
         "${workspaceFolder}/**/*.js"
       ]
