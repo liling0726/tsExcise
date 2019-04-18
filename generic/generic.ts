@@ -11,6 +11,7 @@
  let MyIdentity1:<U>(arg:U)=>U =identity
  // 可以使用带有签名的对象字面量
  let MyIdentity2 :{<T>(arg:T):T} = identity
+ let myIdentity3:<T>(arg:T)=>void=function <T>(arg:T):void{}
 
  /**
   * 定义泛型接口
@@ -19,7 +20,7 @@
  interface GenericIdentityFn{
    <T>(arg:T):T
  }
- let MyIdentity3 :GenericIdentityFn = idetify
+ let MyIdentity3 :GenericIdentityFn = identity
 /**
  * 泛型参数当作整个接口的一个参数，接口里的其它成员也能知道这个参数的类型了
  */
@@ -27,4 +28,4 @@
   (arg:T):T
 }
 
-let MyIdentity4 :GenericIdentityFn1<string> = idetify
+let MyIdentity4 :GenericIdentityFn1<string> = identity
