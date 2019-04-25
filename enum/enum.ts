@@ -47,4 +47,4 @@ declare enum Enum1 {
   B,
   C = 2
 }
-console.log(Enum1.A)c'd
+console.log(Enum1.A)
