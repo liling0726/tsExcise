@@ -23,4 +23,4 @@ var Enum;
 var a = Enum.A;
 var nameOfA = Enum[a]; // "A"
 var directions = [0 /* Up */, 1 /* Down */, 2 /* Left */, 3 /* Right */];
-console.log(Enum.A);
+console.log(Enum1.A);

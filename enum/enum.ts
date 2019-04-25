@@ -31,7 +31,8 @@ const enum Directions {
   Up,
   Down,
   Left,
-  Right
+  Right,
+  Middel=3+3
 }
 
 let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right]
@@ -46,4 +47,4 @@ declare enum Enum1 {
   B,
   C = 2
 }
-console.log(Enum1.A)
+console.log(Enum1.A)c'd

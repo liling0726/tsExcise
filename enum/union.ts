@@ -25,7 +25,7 @@ interface Square {
 
 let c: Circle = {
   // The expected type comes from property 'kind' which is declared here on type 'Circle'
-  kind: ShapeKind.Square, //  只能是 ShapeKind.Circle
+  kind: ShapeKind.Square, //  只能是 ShapeKind.Circle 或者传入值 0
   //    ~~~~~~~~~~~~~~~~ Error!
   radius: 100,
 }

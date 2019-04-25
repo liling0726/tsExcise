@@ -14,7 +14,7 @@ var ShapeKind;
 })(ShapeKind || (ShapeKind = {}));
 var c = {
     // The expected type comes from property 'kind' which is declared here on type 'Circle'
-    kind: ShapeKind.Square,
+    kind: 0,
     //    ~~~~~~~~~~~~~~~~ Error!
     radius: 100
 };
@@ -23,11 +23,3 @@ var E;
     E[E["Foo"] = 0] = "Foo";
     E[E["Bar"] = 1] = "Bar";
 })(E || (E = {}));
-//枚举成员是一种类型
-function f(x) {
-    // E.Foo 是一种类型，所以x !== E.Foo永远为Ttrue
-    if (x !== E.Foo || x !== E.Bar) {
-        //             ~~~~~~~~~~~
-        // Error! Operator '!==' cannot be applied to types 'E.Foo' and 'E.Bar'.
-    }
-}
